@@ -14,7 +14,8 @@ namespace ITC
         {
             DBUtil db = new DBUtil();
             DataSet ds = db.GetUser();
-            Label1.Text = ds.ToString();
+            ListBox1.DataSource = ds;
+            ListBox1.DataBind();
         }
     }
 }
