@@ -33,7 +33,7 @@ namespace ITC
 
         public DataSet GetUser()
         {
-            string query = "SELECT * FROM User";
+            string query = "SELECT * FROM \"User\"";
             SqlCommand cmd = new SqlCommand(query);
             return FillDataSet(cmd, "User");
         }
